@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyconstruccion LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+    header {
+      background: url('images/hero_construction.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: #f0c040;
+      padding: 20px;
+    }
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      border-bottom: 2px solid #f0c040;
+    }
+    nav a {
+      color: #f0c040;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #f0c040;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #f0c040;
+    }
+    .project {
+      margin-bottom: 60px;
+    }
+    .contact-form, .appointment-form {
+      background-color: #1b1b1b;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(240, 192, 64, 0.2);
+      margin-top: 30px;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .appointment-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #111;
+      color: #fff;
+    }
+    .contact-form button,
+    .appointment-form button {
+      background-color: #f0c040;
+      border: none;
+      padding: 12px 25px;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #111;
+      color: #f0c040;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .whatsapp-btn {
+      background: #25D366;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: white;
+      display: inline-block;
+      text-decoration: none;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .social {
+      margin-top: 10px;
+    }
+    .social a {
+      color: #f0c040;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chuyconstruccion LLC</h1>
+    <p>Remodelación, Instalación y Construcción Profesional en Rapid City, SD</p>
+  </header>
+  <nav>
+    <a href="#quienes">¿Quiénes Somos?</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#citas">Agendar Cita</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="quienes">
+    <h2>¿Quiénes somos?</h2>
+    <p style="text-align:center; max-width:900px; margin:auto;">En <strong>Chuyconstruccion LLC</strong> nos especializamos en todo tipo de remodelación e instalación: carpintería, concreto, drywall, pintura, instalación y restauración de pisos de madera, y mucho más. Nos destacamos por nuestro compromiso, precisión y atención al detalle.</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos Recientes</h2>
+    <div class="project">
+      <h3 style="text-align:center">Proyecto 1: Remodelación frente al mar</h3>
+      <div class="gallery">
+        <img src="images/p1_1.jpg">
+        <img src="images/p1_2.jpg">
+        <img src="images/p1_3.jpg">
+        <img src="images/p1_4.jpg">
+        <img src="images/p1_5.jpg">
+        <img src="images/p1_6.jpg">
+        <img src="images/p1_7.jpg">
+        <img src="images/p1_8.jpg">
+        <img src="images/p1_9.jpg">
+      </div>
+    </div>
+    <div class="project">
+      <h3 style="text-align:center">Proyecto 7: Cocina con piso de madera</h3>
+      <div class="gallery">
+        <img src="images/p7_1.jpg">
+        <img src="images/p7_2.jpg">
+        <img src="images/p7_3.jpg">
+      </div>
+    </div>
+    <div class="project">
+      <h3 style="text-align:center">Proyecto 8: Techo en madera decorativa</h3>
+      <div class="gallery">
+        <img src="images/p8_1.jpg">
+        <img src="images/p8_2.jpg">
+        <img src="images/p8_3.jpg">
+        <img src="images/p8_4.jpg">
+        <img src="images/p8_5.jpg">
+        <img src="images/p8_6.jpg">
+        <img src="images/p8_7.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section id="citas">
+    <h2>Agendar una Cita</h2>
+    <form class="appointment-form" action="mailto:chuyconstruccionll@gmail.com" method="post" enctype="text/plain">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" required>
+      <label for="fecha">Fecha preferida</label>
+      <input type="date" id="fecha" name="fecha" required>
+      <label for="mensaje">Detalles del proyecto</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <button type="submit">Agendar</button>
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form class="contact-form" action="mailto:chuyconstruccionll@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+    <div style="text-align:center">
+      <a class="whatsapp-btn" href="https://wa.me/15404710523" target="_blank">Contactar por WhatsApp</a>
+      <div class="social">
+        <a href="https://www.instagram.com/chuyconstruccion" target="_blank">Instagram: @chuyconstruccion</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chuyconstruccion LLC - Rapid City, South Dakota | Tel: 540-471-0523</p>
+  </footer>
+</body>
+</html>
